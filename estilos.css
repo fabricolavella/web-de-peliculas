@@ -1,0 +1,159 @@
+.navbar-nav li a{
+	margin: 10px;
+}
+.row{
+	padding: 0px;
+	margin: 0px;
+}
+.not ul li{
+	float:left;
+	margin:15px;
+	list-style: none;
+}
+.contenedor a{
+  color:black;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background:white;
+}
+.logoUser img{
+  width:120px;
+  height:120;
+  margin-top:-80px;
+  border-radius:100px
+}
+.logoUser form label{
+     float:left;
+}
+    
+.form-group#user-group input{
+height: 42px;
+font-size: 18px;
+border:0;
+padding-left: 45px;
+border-radius: 5px;
+}
+.form-group#password-group input{
+height: 42px;
+font-size: 18px;
+border:0;
+padding-left: 45px;
+border-radius: 5px;
+}
+.fa-user{
+position: absolute;
+left:28px;
+padding-top: 40px;
+font-size: 25px;
+}
+.fa-lock{
+position: absolute;
+left:28px;
+padding-top: 40px;
+font-size: 25px;
+}
+#fc{
+          border:5px dashed #cfd8dc;
+          color: white;
+          border-radius: 40px;
+          background-color:#212121;
+          padding: 1%;
+          padding-top: 30px;
+
+        }
+.desp a{
+              color: orangered;
+              margin: 10px;
+              text-decoration: none;
+              font-size: 18px;
+}  
+.formulario{
+     
+            background: #212121;
+            color: white;
+            border-radius: 50px;
+        }
+        .formulario input{
+            width: 70%;
+        }
+        .formulario textarea{
+            width: 70%;
+            height: 100px;
+        }
+        .formulario button{
+             width: 30%;
+        }
+        .lista1{
+          float:right;
+        letter-spacing: 1px;
+      }
+      .lista1 li button{
+        display: block;
+        text-decoration: none;
+        color:white;	
+        margin:5px;
+      }
+      .lista1>li{
+        float:left;
+      }
+      ul{
+        list-style:none;
+      }
+.social a{
+        font-size: 25px;
+        color:white;
+        text-decoration: none;
+        letter-spacing:10px;
+    }
+.social a>.fac:hover{
+         font-size: 25px;
+         color:#0d47a1;
+         text-decoration: none;
+      }
+.social a>.ins:hover{
+         font-size: 25px;
+         color:white;
+         text-decoration: none;
+      }
+.social a>.twt:hover{
+       font-size: 25px;
+         color:#2196f3;
+         text-decoration: none;
+      }
+      .alta form label{
+        color:white;
+        float:left;
+    }
+    .fa-star{
+      color:#ffc107;
+ }
+ .parent {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.child {
+  position: relative;
+  float: left;    
+  height: 650px;
+  width: calc(100% + 20px);
+  overflow-y: auto;
+}
+.scrollmenu {
+background-color: #212121;
+overflow: auto;
+white-space: nowrap;
+
+}
+.lista img{
+  width:120px;
+  height:180px;
+}
+.lista{
+ color:#e0e0e0;
+}

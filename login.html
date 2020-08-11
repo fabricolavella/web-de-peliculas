@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <style>
+    body{
+  background: url('img/pantalla.png') no-repeat fixed center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+    a {
+      text-decoration: none;
+    }
+    .invitado a{
+      background:#673ab7;
+      color:white;
+    }
+    .invitado a:hover{
+      background:white;
+      color:#512da8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 invitado" style="padding-top:10px;">
+        <a class="btn" style="float:right" href="login.php?invitado=1">Visistar pagina</a>
+      </div>
+      <div class="col-md-12" align="center">
+        <img src="logo.png" style="width:150px;height:70px;border-radius:20px">
+      </div>
+      <div class="col-md-12" align="center" style="padding-top:100px">
+        <div>
+          <div class="col-md-6 logoUser" style="background:#2196f3;padding:20px;opacity:0.8;color:white">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFvDIU26_8cxG5ZaL0Nzc-eHZynj2QtXLfO5kfRLvQRgQPIko1&usqp=CAU">
+            <form action="login.php" method="POST">
+              <div class="form-group" id="user-group">
+                <label for="user">Usuario</label>
+                <i class="fas fa-user" style="color:black"></i><input type="text" class="form-control" name="usuario" id="usuario"
+                  placeholder="ingrese su e-mail">
+              </div>
+              <div class="form-group" id="password-group">
+                <label for="contra">Contraseña</label>
+                <i class="fas fa-lock" style="color:black"></i><input type="password" class="form-control" name="contra" id="contra"
+                  placeholder="ingrese su contraseña">
+                <a style="float:left;color:white" href="registrarse.html">Crear una cuenta nueva</a>
+              </div>
+              <br>
+              <div class="form-group">
+                <button type="submit" name="ingresar" value="ingresar" class="btn btn-primary">Ingresar</button>
+              </div>
+              <a style="color:white" href="#" data-toggle="modal" data-target="#recuperar">¿Olvidaste tu contraseña?</a>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div data-backdrop="static"  class="modal fade" id="recuperar">
+    <div class="col-md-12 modal-dialog" >
+        <div class="modal-content">
+            <div class="modal-header" style="background:#212121;color:white">
+                <h4 class="modal-title">Recuperar contraseña</h4>
+                <button style="color:white" type="button" class="close" data-dismiss="modal">X</button>
+            </div>
+            
+              <div class="modal-body" style="background:#121212;color:white">
+                <form action="InicioRecuperar.php" method="POST">
+
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label style="float:left" for="inputEmail4">ingrese su email</label>
+                      <input class="form-control" type="email" name="usuario" id="usuario" required placeholder="ejemplo@ejemplo.com">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-dark" name="send" value="send" style="width: 100%;">buscar</button>
+                </form>
+              </div>
+            
+        </div>
+      </div>
+  </div>
+    
+  <div style="padding-top:100px">
+    <footer style="background: black;color: white;bottom: 0%;position: fixed;width: 100%;height:60px;opacity:0.8;">
+        <div align="center"  class="social">
+            <a href="" target="_blank"><i class="fab fa-instagram ins"></i></a>
+            <a href="" target="_blank"><i class="fab fa-facebook fac"></i></a>
+            <a href="" target="_blank"><i class="fab fa-twitter twt"></i></a>
+      </div>
+             <div align="center">
+                <p><strong>Copyright 2020 &copy PELISCF</strong></p>
+            </div>   
+    </footer>
+    </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/2be8605e79.js"></script>
+</body>
+
+</html>
